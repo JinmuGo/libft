@@ -89,7 +89,6 @@ fclean: clean
 re: fclean all
 
 bonus:
-	sleep 1
 	make WITH_BONUS=1 all
 
 .PHONY: all bonus clean fclean re
