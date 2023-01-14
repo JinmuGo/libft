@@ -6,7 +6,7 @@
 /*   By: jgo <jgo@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/06 14:17:23 by jgo               #+#    #+#             */
-/*   Updated: 2022/07/14 14:00:52 by jgo              ###   ########.fr       */
+/*   Updated: 2022/11/17 11:07:02 by jgo              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ size_t	ft_strlen(const char *s)
 	size_t	len;
 
 	len = 0;
-	while (s[len])
+	while (s && s[len])
 		len++;
 	return (len);
 }

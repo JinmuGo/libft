@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jgo <jgo@student.42.fr>                    +#+  +:+       +#+        */
+/*   By: jgo <jgo@student.42seoul.kr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/06 12:55:42 by jgo               #+#    #+#             */
-/*   Updated: 2022/07/13 12:42:08 by jgo              ###   ########.fr       */
+/*   Updated: 2022/11/30 20:25:59 by jgo              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,10 @@
 # include <stdlib.h>
 # include <unistd.h>
 
-# define TRUE 1
-# define FALSE 0
-
-typedef int	t_bool;
+typedef enum e_bool {
+	TRUE = 1,
+	FALSE = 0
+}	t_bool;
 
 typedef struct s_list
 {
@@ -69,5 +69,8 @@ char	*ft_strrchr(const char *s, int c);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 int		ft_tolower(int c);
 int		ft_toupper(int c);
+
+// GNL
+char	*get_next_line(int fd);
 
 #endif

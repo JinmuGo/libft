@@ -6,11 +6,19 @@
 #    By: jgo <jgo@student.42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/07/06 12:56:36 by jgo               #+#    #+#              #
-#    Updated: 2022/08/22 17:40:39 by jgo              ###   ########.fr        #
+#    Updated: 2023/01/04 20:09:51 by jgo              ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
+ifndef TOPDIR
+		TOPDIR = $(abspath ../..)
+endif
+include $(TOPDIR)/config/Rules.mk
+include $(TOPDIR)/config/color_rules.mk
+
 NAME = libft.a
+HEAD = libft.h \
+	get_next_line_bonus.h
 
 SRCS = ft_atoi.c \
 	ft_bzero.c \
@@ -46,49 +54,45 @@ SRCS = ft_atoi.c \
 	ft_strtrim.c \
 	ft_substr.c \
 	ft_tolower.c \
-	ft_toupper.c 
-
-BONUS = ft_lstadd_back.c \
-		ft_lstadd_front.c \
-		ft_lstclear.c \
-		ft_lstdelone.c \
-		ft_lstiter.c \
-		ft_lstlast.c \
-		ft_lstmap.c \
-		ft_lstnew.c \
-		ft_lstsize.c \
+	ft_toupper.c \
+	ft_lstadd_back.c \
+	ft_lstadd_front.c \
+	ft_lstclear.c \
+	ft_lstdelone.c \
+	ft_lstiter.c \
+	ft_lstlast.c \
+	ft_lstmap.c \
+	ft_lstnew.c \
+	ft_lstsize.c \
+	get_next_line_bonus.c \
+	get_next_line_utils_bonus.c
 
 OBJS = $(SRCS:.c=.o)
+DEPS = $(SRCS:.c=.d)
+-include $(DEPS)
 
-BONUS_OBJS = $(BONUS:.c=.o)
+all bonus:
+	$(Q)$(call color_printf,$(CYAN),$(NAME),🎯 starting compile libft)
+	$(Q)$(MAKE) $(NAME)
+	$(Q)$(call color_printf,$(GREEN),$(NAME),🔰 done!)
 
-ifndef WITH_BONUS
-	OBJECT = $(OBJS)
-else
-	OBJECT = $(OBJS) $(BONUS_OBJS)
-endif
-
-CC = cc
-CFLAGS = -Wall -Wextra -Werror
-RM = rm -f
-
-all: $(NAME)
-
-%.o : %.c
-	$(CC) $(CFLAGS) -c $< -o $@
-
-$(NAME): $(OBJECT)
-	ar -rcs $@ $^
-
+$(NAME): $(OBJS)
+		$(Q)$(call color_printf,$(GREEN),$(NAME),📚 archive object)
+		$(AR) $(ARFLAGS) $@ $^
+		$(Q)$(MAKE) files="$(NAME)" src_dir=`pwd` dst_dir=$(TOPDIR)/lib link_files
+		$(Q)$(MAKE) files="$(HEAD)" src_dir=`pwd` dst_dir=$(TOPDIR)/includes link_files
+		
 clean:
-	$(RM) $(OBJS) $(BONUS_OBJS)
+		$(Q)$(MAKE) files="$(NAME)" src_dir=`pwd` dst_dir=$(TOPDIR)/lib unlink_files
+		$(Q)$(MAKE) files="$(HEAD)" src_dir=`pwd` dst_dir=$(TOPDIR)/includes unlink_files
+		$(Q)$(call color_printf,$(RED),$(NAME),🗑️  remove Objects && Dependency file)
+		$(RM) $(OBJS) $(DEPS)
 
 fclean: clean
-	$(RM) $(NAME)
+		$(Q)$(call color_printf,$(RED),$(NAME),🗑️  remove $(NAME))
+		$(RM) $(NAME)
 
-re: fclean all
+re: fclean
+		$(MAKE) all
 
-bonus:
-	make WITH_BONUS=1 all
-
-.PHONY: all bonus clean fclean re
+.PHONY: all clean fclean re bonus
