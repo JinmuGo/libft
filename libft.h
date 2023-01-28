@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jgo <jgo@student.42seoul.kr>               +#+  +:+       +#+        */
+/*   By: jgo <jgo@student.42seoul.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/06 12:55:42 by jgo               #+#    #+#             */
-/*   Updated: 2022/11/30 20:25:59 by jgo              ###   ########.fr       */
+/*   Updated: 2023/01/28 10:50:09 by jgo              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,8 @@
 # include <unistd.h>
 
 typedef enum e_bool {
-	TRUE = 1,
-	FALSE = 0
+	FT_TRUE = 1,
+	FT_FALSE = 0
 }	t_bool;
 
 typedef struct s_list

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jgo <jgo@student.42seoul.kr>               +#+  +:+       +#+        */
+/*   By: jgo <jgo@student.42seoul.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/09 17:06:51 by jgo               #+#    #+#             */
-/*   Updated: 2022/11/23 14:30:18 by jgo              ###   ########.fr       */
+/*   Updated: 2023/01/28 10:50:16 by jgo              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,8 +80,8 @@ static t_bool	shift_i_judge_end(char const *s, char c, size_t *i)
 	while (s[*i] && s[*i] == c)
 		(*i)++;
 	if (!s[*i])
-		return (TRUE);
-	return (FALSE);
+		return (FT_TRUE);
+	return (FT_FALSE);
 }
 
 char	**ft_free_all_arr(char **arr)
