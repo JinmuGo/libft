@@ -6,7 +6,7 @@
 #    By: jgo <jgo@student.42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/07/06 12:56:36 by jgo               #+#    #+#              #
-#    Updated: 2023/01/04 20:09:51 by jgo              ###   ########.fr        #
+#    Updated: 2023/01/28 15:55:37 by jgo              ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -64,6 +64,7 @@ SRCS = ft_atoi.c \
 	ft_lstmap.c \
 	ft_lstnew.c \
 	ft_lstsize.c \
+	ft_malloc.c \
 	get_next_line_bonus.c \
 	get_next_line_utils_bonus.c
 
@@ -72,7 +73,7 @@ DEPS = $(SRCS:.c=.d)
 -include $(DEPS)
 
 all bonus:
-	$(Q)$(call color_printf,$(CYAN),$(NAME),🎯 starting compile libft)
+	$(Q)$(call color_printf,$(CYAN),$(NAME),🎯 starting compile $(NAME))
 	$(Q)$(MAKE) $(NAME)
 	$(Q)$(call color_printf,$(GREEN),$(NAME),🔰 done!)
 
