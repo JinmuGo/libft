@@ -6,7 +6,7 @@
 /*   By: jgo <jgo@student.42seoul.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/09 17:06:51 by jgo               #+#    #+#             */
-/*   Updated: 2023/01/28 10:50:16 by jgo              ###   ########.fr       */
+/*   Updated: 2023/02/09 19:00:52 by jgo              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 static size_t	total_word_count(char const *s, char c);
 static size_t	cal_word_len(char const *s, char c, size_t i);
 static t_bool	shift_i_judge_end(char const *s, char c, size_t *i);
-static char		**ft_free_all_arr(char **arr);
 
 char	**ft_split(char const *s, char c)
 {
@@ -82,15 +81,4 @@ static t_bool	shift_i_judge_end(char const *s, char c, size_t *i)
 	if (!s[*i])
 		return (FT_TRUE);
 	return (FT_FALSE);
-}
-
-char	**ft_free_all_arr(char **arr)
-{
-	size_t	i;
-
-	i = 0;
-	while (arr[i])
-		free(arr[i++]);
-	free(arr);
-	return ((void *)0);
 }
