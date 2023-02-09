@@ -1,23 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_malloc.c                                        :+:      :+:    :+:   */
+/*   ft_isspace.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jgo <jgo@student.42seoul.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/01/28 15:54:22 by sanghwal          #+#    #+#             */
-/*   Updated: 2023/02/09 17:37:30 by jgo              ###   ########.fr       */
+/*   Created: 2023/02/09 17:30:59 by jgo               #+#    #+#             */
+/*   Updated: 2023/02/09 17:37:34 by jgo              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-void	*ft_malloc(size_t size)
+int	ft_isspace(int c)
 {
-	void	*result;
-
-	result = malloc(size);
-	if (!result)
-		exit(EXIT_FAILURE);
-	return (result);
+	if ((9 <= c && c <= 13) || c == 32)
+		return (1);
+	else
+		return (0);
 }
