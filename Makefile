@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: jgo <jgo@student.42.fr>                    +#+  +:+       +#+         #
+#    By: jgo <jgo@student.42seoul.fr>               +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/07/06 12:56:36 by jgo               #+#    #+#              #
-#    Updated: 2023/01/28 15:55:37 by jgo              ###   ########.fr        #
+#    Updated: 2023/02/09 19:07:37 by jgo              ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -65,6 +65,11 @@ SRCS = ft_atoi.c \
 	ft_lstnew.c \
 	ft_lstsize.c \
 	ft_malloc.c \
+	ft_free_all_arr.c \
+	ft_strinsert.c \
+	ft_isspace.c \
+	ft_isspecial.c \
+	ft_strcombine.c \
 	get_next_line_bonus.c \
 	get_next_line_utils_bonus.c
 

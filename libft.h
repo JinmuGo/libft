@@ -6,7 +6,7 @@
 /*   By: jgo <jgo@student.42seoul.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/06 12:55:42 by jgo               #+#    #+#             */
-/*   Updated: 2023/02/09 18:57:04 by jgo              ###   ########.fr       */
+/*   Updated: 2023/02/09 19:08:01 by jgo              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define LIBFT_H
 # include <stdlib.h>
 # include <unistd.h>
+# include <stdarg.h>
 
 typedef enum e_bool {
 	FT_TRUE = 1,
