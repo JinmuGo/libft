@@ -6,7 +6,7 @@
 /*   By: jgo <jgo@student.42seoul.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/09 18:39:44 by jgo               #+#    #+#             */
-/*   Updated: 2023/02/09 19:05:18 by jgo              ###   ########.fr       */
+/*   Updated: 2023/02/09 19:38:13 by jgo              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,5 @@ char	*ft_strinsert(char **arr, char *insert)
 		free(tmp);
 		idx++;
 	}
-	ft_free_all_arr(arr);
 	return (str);
 }
