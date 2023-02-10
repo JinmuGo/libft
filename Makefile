@@ -6,7 +6,7 @@
 #    By: jgo <jgo@student.42seoul.fr>               +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/07/06 12:56:36 by jgo               #+#    #+#              #
-#    Updated: 2023/02/09 19:07:37 by jgo              ###   ########.fr        #
+#    Updated: 2023/02/10 23:10:22 by jgo              ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -70,6 +70,8 @@ SRCS = ft_atoi.c \
 	ft_isspace.c \
 	ft_isspecial.c \
 	ft_strcombine.c \
+	ft_find_next_prime.c \
+	ft_find_prev_prime.c \
 	get_next_line_bonus.c \
 	get_next_line_utils_bonus.c
 

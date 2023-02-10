@@ -6,7 +6,7 @@
 /*   By: jgo <jgo@student.42seoul.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/06 12:55:42 by jgo               #+#    #+#             */
-/*   Updated: 2023/02/09 19:13:00 by jgo              ###   ########.fr       */
+/*   Updated: 2023/02/10 23:09:56 by jgo              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,6 +75,8 @@ int		ft_toupper(int c);
 void	*ft_malloc(size_t size);
 char	**ft_free_all_arr(char **arr);
 char	*ft_strinsert(char **arr, char *insert);
+int		ft_find_next_prime(int nb);
+int		ft_find_prev_prime(int nb);
 
 // GNL
 char	*get_next_line(int fd);
