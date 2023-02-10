@@ -6,7 +6,7 @@
 /*   By: jgo <jgo@student.42seoul.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/26 14:04:31 by jgo               #+#    #+#             */
-/*   Updated: 2023/02/10 23:12:56 by jgo              ###   ########.fr       */
+/*   Updated: 2023/02/11 00:42:47 by jgo              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,8 @@ int	ft_find_prev_prime(int nb)
 {
 	if (nb < 2)
 		return (2);
+	if (is_prime(nb))
+        nb--;
 	while (!is_prime(nb))
 		nb--;
 	return (nb);
