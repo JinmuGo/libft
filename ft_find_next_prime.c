@@ -6,7 +6,7 @@
 /*   By: jgo <jgo@student.42seoul.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/26 14:04:31 by jgo               #+#    #+#             */
-/*   Updated: 2023/02/11 10:48:47 by jgo              ###   ########.fr       */
+/*   Updated: 2023/02/11 11:05:41 by jgo              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 t_bool	is_prime(int nb)
 {
-	int i;
+	int	i;
 
 	i = 2;
 	while (i * i <= nb)
@@ -30,7 +30,7 @@ int	ft_find_next_prime(int nb)
 {
 	if (nb < 2)
 		return (2);
-    if (is_prime(nb))
+	if (is_prime(nb))
 		nb++;
 	while (!is_prime(nb))
 		nb++;
