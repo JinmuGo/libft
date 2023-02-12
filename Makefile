@@ -6,15 +6,15 @@
 #    By: jgo <jgo@student.42seoul.fr>               +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/07/06 12:56:36 by jgo               #+#    #+#              #
-#    Updated: 2023/02/11 21:49:10 by jgo              ###   ########.fr        #
+#    Updated: 2023/02/12 13:17:52 by jgo              ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 ifndef TOPDIR
 		TOPDIR = $(abspath ../..)
 endif
-include $(TOPDIR)/config/Rules.mk
-include $(TOPDIR)/config/color_rules.mk
+include $(TOPDIR)/make_config/Rules.mk
+include $(TOPDIR)/make_config/color_rules.mk
 
 NAME = libft.a
 HEAD = libft.h \
