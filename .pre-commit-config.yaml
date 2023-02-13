@@ -1,4 +1,5 @@
 # https://github.com/vcwild/norminette-hook
+# pre-commit install --install-hooks --overwrite
 
 default_language_version:
   python: python3
