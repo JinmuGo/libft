@@ -13,8 +13,8 @@
 ifndef TOPDIR
 		TOPDIR = $(abspath ../..)
 endif
-include $(TOPDIR)/make_config/Rules.mk
-include $(TOPDIR)/make_config/color_rules.mk
+include $(TOPDIR)/config/Rules.mk
+include $(TOPDIR)/config/color_rules.mk
 
 NAME = libft.a
 HEAD = libft.h \
