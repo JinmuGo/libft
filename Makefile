@@ -6,7 +6,7 @@
 #    By: jgo <jgo@student.42seoul.fr>               +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/07/06 12:56:36 by jgo               #+#    #+#              #
-#    Updated: 2023/02/12 13:17:52 by jgo              ###   ########.fr        #
+#    Updated: 2023/02/19 21:53:50 by jgo              ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -43,6 +43,7 @@ SRCS = ft_atoi.c \
 	ft_strdup.c \
 	ft_striteri.c \
 	ft_strjoin.c \
+	ft_strcat.c \
 	ft_strlcat.c \
 	ft_strlen.c \
 	ft_strmapi.c \
