@@ -6,7 +6,7 @@
 /*   By: jgo <jgo@student.42seoul.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/06 12:55:42 by jgo               #+#    #+#             */
-/*   Updated: 2023/03/05 15:01:34 by jgo              ###   ########.fr       */
+/*   Updated: 2023/03/08 20:33:35 by jgo              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,6 +83,7 @@ int		ft_find_prev_prime(int nb);
 int		ft_add_all_ascii(const char *str);
 char	*ft_strcombine(int n, ...);
 char	*ft_strcat(char *dest, char *src);
+char	**ft_arrdup(const char **src);
 
 // GNL
 char	*get_next_line(int fd);
