@@ -6,7 +6,7 @@
 /*   By: jgo <jgo@student.42seoul.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/06 12:55:42 by jgo               #+#    #+#             */
-/*   Updated: 2023/03/08 20:33:35 by jgo              ###   ########.fr       */
+/*   Updated: 2023/04/10 17:09:27 by jgo              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,11 +15,7 @@
 # include <stdlib.h>
 # include <unistd.h>
 # include <stdarg.h>
-
-typedef enum e_bool {
-	FT_TRUE = 1,
-	FT_FALSE = 0
-}	t_bool;
+# include <stdbool.h>
 
 typedef struct s_list
 {
@@ -36,7 +32,7 @@ int		ft_isascii(int c);
 int		ft_isdigit(int c);
 int		ft_isprint(int c);
 int		ft_isspace(int c);
-t_bool	ft_isspecial(int c);
+bool	ft_isspecial(int c);
 char	*ft_itoa(int n);
 void	ft_lstadd_back(t_list **lst, t_list *new);
 void	ft_lstadd_front(t_list **lst, t_list *new);

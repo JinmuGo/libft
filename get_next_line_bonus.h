@@ -6,7 +6,7 @@
 /*   By: jgo <jgo@student.42seoul.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/19 15:06:53 by jgo               #+#    #+#             */
-/*   Updated: 2023/02/23 18:31:50 by jgo              ###   ########.fr       */
+/*   Updated: 2023/04/10 17:22:16 by jgo              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,8 @@
 # endif
 
 typedef enum e_kind {
-	HEAD = 1,
-	TAIL = 0
+	TAIL,
+	HEAD
 }	t_kind;
 
 typedef struct s_buf
@@ -37,7 +37,6 @@ typedef struct s_buf
 char	*get_next_line(int fd);
 void	*free_lst_elem(t_buf **buf_lst, t_buf *buf);
 size_t	get_total_len(t_buf *buf);
-char	*put_in_str(t_buf **buf_lst, t_buf *buf, char *str, size_t total_len);
 char	*make_str(t_buf **buf_lst, t_buf *buf);
 
 #endif
