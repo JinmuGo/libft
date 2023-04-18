@@ -6,7 +6,7 @@
 /*   By: jgo <jgo@student.42seoul.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/19 15:06:51 by jgo               #+#    #+#             */
-/*   Updated: 2023/04/10 17:22:59 by jgo              ###   ########.fr       */
+/*   Updated: 2023/04/18 16:43:47 by jgo              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ void	*free_lst_elem(t_buf **buf_lst, t_buf *buf)
 	return (NULL);
 }
 
-size_t	get_total_len(t_buf *buf)
+static size_t	get_total_len(t_buf *buf)
 {
 	size_t		total_len;
 	const int	first_fd = buf->fd;
