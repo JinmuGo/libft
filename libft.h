@@ -6,22 +6,28 @@
 /*   By: jgo <jgo@student.42seoul.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/06 12:55:42 by jgo               #+#    #+#             */
-/*   Updated: 2023/04/10 17:09:27 by jgo              ###   ########.fr       */
+/*   Updated: 2023/04/18 20:10:44 by jgo              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
+
+/*------------- INCLUDE --------------*/
 # include <stdlib.h>
 # include <unistd.h>
 # include <stdarg.h>
 # include <stdbool.h>
 
-typedef struct s_list
+/*------------- TYPEDEF --------------*/
+typedef struct s_list	t_list;
+
+/*-------------- STRUCT --------------*/
+struct s_list
 {
 	void			*content;
 	struct s_list	*next;
-}	t_list;
+};
 
 int		ft_atoi(const char *str);
 void	ft_bzero(void *s, size_t n);
@@ -81,7 +87,7 @@ char	*ft_strcombine(int n, ...);
 char	*ft_strcat(char *dest, char *src);
 char	**ft_arrdup(const char **src);
 
-// GNL
+/*-------- GET_NEXT_LINE --------*/
 char	*get_next_line(int fd);
 
 #endif
