@@ -5,40 +5,41 @@
 #                                                     +:+ +:+         +:+      #
 #    By: jgo <jgo@student.42seoul.fr>               +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2022/07/06 12:56:36 by jgo               #+#    #+#              #
-#    Updated: 2023/05/25 15:27:41 by jgo              ###   ########.fr        #
+#    Created: 2023/01/05 08:31:25 by jgo               #+#    #+#              #
+#    Updated: 2023/05/25 15:02:31 by jgo              ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 ifndef TOPDIR
-		TOPDIR = $(abspath ../../)
+		TOPDIR = $(abspath ../../../)
 endif
+
 include $(TOPDIR)/make_config/com/ColorRules.mk
 include $(TOPDIR)/make_config/lib/Rules.mk
 
-NAME := libft.a
+SRCS =	ft_split.c \
+		ft_strcat.c \
+		ft_strchr.c \
+		ft_strcmp.c \
+		ft_strcombine.c \
+		ft_strdup.c \
+		ft_strinsert.c \
+		ft_striteri.c \
+		ft_strjoin.c \
+		ft_strlcat.c \
+		ft_strlcpy.c \
+		ft_strlen.c \
+		ft_strmapi.c \
+		ft_strncmp.c \
+		ft_strnstr.c \
+		ft_strrchr.c \
+		ft_strtrim.c \
+		ft_substr.c
 
-HEAD :=	ft_arr.h \
-		ft_ascii.h \
-		ft_io.h \
-		ft_is.h \
-		ft_lst.h \
-		ft_math.h \
-		ft_mem.h \
-		ft_str.h \
-		libft.h \
-		get_next_line_bonus.h
+NAME =	ft_str.a
 
-DIRS :=	ft_arr \
-		ft_ascii \
-		ft_io \
-		ft_is \
-		ft_lst \
-		ft_math \
-		ft_mem \
-		ft_str
-
-LIBS := $(addsuffix .a, $(addprefix libs/, $(DIRS)))
+OBJS = $(SRCS:.c=.o)
+DEPS = $(SRCS:.c=.d)
 -include $(DEPS)
 
-include $(TOPDIR)/make_config/lib/Recipes.mk
+include $(TOPDIR)/make_config/lib/SubLibsRecipes.mk
