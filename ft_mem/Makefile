@@ -6,7 +6,7 @@
 #    By: jgo <jgo@student.42seoul.fr>               +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/01/05 08:31:25 by jgo               #+#    #+#              #
-#    Updated: 2023/05/25 15:28:06 by jgo              ###   ########.fr        #
+#    Updated: 2023/05/25 18:13:06 by jgo              ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,7 +28,7 @@ SRCS =	ft_bzero.c \
 		ft_memmove.c \
 		ft_memset.c
 
-NAME =	ft_mem.a
+NAME =	libft_mem.a
 
 OBJS = $(SRCS:.c=.o)
 DEPS = $(SRCS:.c=.d)

@@ -6,7 +6,7 @@
 #    By: jgo <jgo@student.42seoul.fr>               +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/01/05 08:31:25 by jgo               #+#    #+#              #
-#    Updated: 2023/05/25 14:59:55 by jgo              ###   ########.fr        #
+#    Updated: 2023/05/25 18:13:00 by jgo              ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,7 @@ include $(TOPDIR)/make_config/lib/Rules.mk
 SRCS =	ft_find_next_prime.c \
 		ft_find_prev_prime.c
 
-NAME =	ft_math.a
+NAME =	libft_math.a
 
 OBJS = $(SRCS:.c=.o)
 DEPS = $(SRCS:.c=.d)

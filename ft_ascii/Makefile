@@ -6,7 +6,7 @@
 #    By: jgo <jgo@student.42seoul.fr>               +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/01/05 08:31:25 by jgo               #+#    #+#              #
-#    Updated: 2023/05/25 14:57:22 by jgo              ###   ########.fr        #
+#    Updated: 2023/05/25 18:12:39 by jgo              ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,7 +23,7 @@ SRCS =	ft_add_all_ascii.c \
 		ft_tolower.c \
 		ft_toupper.c
 
-NAME =	ft_ascii.a
+NAME =	libft_ascii.a
 
 OBJS = $(SRCS:.c=.o)
 DEPS = $(SRCS:.c=.d)

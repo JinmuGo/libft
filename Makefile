@@ -6,7 +6,7 @@
 #    By: jgo <jgo@student.42seoul.fr>               +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/07/06 12:56:36 by jgo               #+#    #+#              #
-#    Updated: 2023/05/25 15:27:41 by jgo              ###   ########.fr        #
+#    Updated: 2023/05/25 17:55:11 by jgo              ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,6 +27,7 @@ HEAD :=	ft_arr.h \
 		ft_mem.h \
 		ft_str.h \
 		libft.h \
+		libft_include.h \
 		get_next_line_bonus.h
 
 DIRS :=	ft_arr \

@@ -6,7 +6,7 @@
 #    By: jgo <jgo@student.42seoul.fr>               +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/01/05 08:31:25 by jgo               #+#    #+#              #
-#    Updated: 2023/05/25 14:56:04 by jgo              ###   ########.fr        #
+#    Updated: 2023/05/25 18:12:33 by jgo              ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,7 @@ include $(TOPDIR)/make_config/lib/Rules.mk
 SRCS =	ft_arrdup.c \
 		ft_arrlen.c
 
-NAME =	ft_arr.a
+NAME =	libft_arr.a
 
 OBJS = $(SRCS:.c=.o)
 DEPS = $(SRCS:.c=.d)

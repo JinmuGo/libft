@@ -6,7 +6,7 @@
 #    By: jgo <jgo@student.42seoul.fr>               +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/01/05 08:31:25 by jgo               #+#    #+#              #
-#    Updated: 2023/05/25 14:58:44 by jgo              ###   ########.fr        #
+#    Updated: 2023/05/25 18:12:48 by jgo              ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,7 +26,7 @@ SRCS =	ft_isalnum.c \
 		ft_isspace.c \
 		ft_isspecial.c
 
-NAME =	ft_is.a
+NAME =	libft_is.a
 
 OBJS = $(SRCS:.c=.o)
 DEPS = $(SRCS:.c=.d)

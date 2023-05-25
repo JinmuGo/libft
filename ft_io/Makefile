@@ -6,7 +6,7 @@
 #    By: jgo <jgo@student.42seoul.fr>               +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/01/05 08:31:25 by jgo               #+#    #+#              #
-#    Updated: 2023/05/25 14:57:56 by jgo              ###   ########.fr        #
+#    Updated: 2023/05/25 18:12:43 by jgo              ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,7 +24,7 @@ SRCS =	ft_putchar_fd.c \
 		get_next_line_bonus.c \
 		get_next_line_utils_bonus.c
 
-NAME =	ft_io.a
+NAME =	libft_io.a
 
 OBJS = $(SRCS:.c=.o)
 DEPS = $(SRCS:.c=.d)
