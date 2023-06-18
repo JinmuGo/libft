@@ -6,7 +6,7 @@
 #    By: jgo <jgo@student.42seoul.fr>               +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/01/05 08:31:25 by jgo               #+#    #+#              #
-#    Updated: 2023/05/25 18:13:00 by jgo              ###   ########.fr        #
+#    Updated: 2023/06/18 15:32:19 by jgo              ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,9 @@ include $(TOPDIR)/make_config/com/ColorRules.mk
 include $(TOPDIR)/make_config/lib/Rules.mk
 
 SRCS =	ft_find_next_prime.c \
-		ft_find_prev_prime.c
+		ft_find_prev_prime.c \
+		ft_rand.c \
+		ft_random_type.c
 
 NAME =	libft_math.a
 
