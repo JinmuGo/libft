@@ -6,7 +6,7 @@
 #    By: jgo <jgo@student.42seoul.fr>               +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/01/05 08:31:25 by jgo               #+#    #+#              #
-#    Updated: 2023/05/25 18:13:11 by jgo              ###   ########.fr        #
+#    Updated: 2023/06/26 18:55:02 by jgo              ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -34,7 +34,8 @@ SRCS =	ft_split.c \
 		ft_strnstr.c \
 		ft_strrchr.c \
 		ft_strtrim.c \
-		ft_substr.c
+		ft_substr.c \
+		ft_remove_suffix.c
 
 NAME =	libft_str.a
 
