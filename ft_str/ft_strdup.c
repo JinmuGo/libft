@@ -6,7 +6,7 @@
 /*   By: jgo <jgo@student.42seoul.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/07 20:17:50 by jgo               #+#    #+#             */
-/*   Updated: 2023/02/13 11:04:20 by jgo              ###   ########.fr       */
+/*   Updated: 2023/10/19 09:10:12 by jgo              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,10 @@
 
 char	*ft_strdup(const char *s1)
 {
-	char	*begin;
 	char	*dest;
 	size_t	i;
 
 	dest = ft_malloc(sizeof(char) * (ft_strlen(s1) + 1));
-	begin = dest;
 	i = 0;
 	while (s1[i])
 	{
@@ -27,5 +25,5 @@ char	*ft_strdup(const char *s1)
 		i++;
 	}
 	dest[i] = 0;
-	return (begin);
+	return (dest);
 }
