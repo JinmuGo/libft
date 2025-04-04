@@ -10,6 +10,9 @@
 #                                                                              #
 # **************************************************************************** #
 
+CFLAGS := -Wall -Wextra -Werror
+ARFLAGS := -rcs
+
 NAME = libft.a
 
 SRCS = ft_atoi.c \
@@ -59,26 +62,12 @@ BONUS = ft_lstadd_back.c \
 		ft_lstsize.c \
 
 OBJS = $(SRCS:.c=.o)
-
 BONUS_OBJS = $(BONUS:.c=.o)
-
-ifndef WITH_BONUS
-	OBJECT = $(OBJS)
-else
-	OBJECT = $(OBJS) $(BONUS_OBJS)
-endif
-
-CC = cc
-CFLAGS = -Wall -Wextra -Werror
-RM = rm -f
 
 all: $(NAME)
 
-%.o : %.c
-	$(CC) $(CFLAGS) -c $< -o $@
-
-$(NAME): $(OBJECT)
-	ar -rcs $@ $^
+$(NAME): $(OBJS)
+	$(AR) $(ARFLAGS) $@ $^
 
 clean:
 	$(RM) $(OBJS) $(BONUS_OBJS)
@@ -88,7 +77,7 @@ fclean: clean
 
 re: fclean all
 
-bonus:
-	make WITH_BONUS=1 all
+bonus: $(OBJS) $(BONUS_OBJS)
+	make all
 
 .PHONY: all bonus clean fclean re
