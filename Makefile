@@ -10,8 +10,13 @@
 #                                                                              #
 # **************************************************************************** #
 
-CFLAGS := -Wall -Wextra -Werror
-ARFLAGS := -rcs
+ifndef TOPDIR
+		TOPDIR = $(abspath ./)
+endif
+include $(TOPDIR)/make_config/com/Color.mk
+include $(TOPDIR)/make_config/com/Funcs.mk
+include $(TOPDIR)/make_config/com/Flags.mk
+include $(TOPDIR)/make_config/lib/Rules.mk
 
 NAME = libft.a
 
